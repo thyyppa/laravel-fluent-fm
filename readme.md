@@ -68,7 +68,7 @@ This package features auto-discovery, so registering the provider and
 facade should not be necessary, but if for any reason auto-discovery does not work for you, 
 you can register the package manually as shown below.
 
-Register the service provider in `config/app.php`
+Register the service provider in `config/app.php` (optional)
 ```php
 'providers' => [
     // Other Service Providers
@@ -77,7 +77,7 @@ Register the service provider in `config/app.php`
 ],
 ```
 
-Register the facade alias in `config/app.php`
+Register the facade alias in `config/app.php` (optional)
 ```php
 'aliases' => [
     Hyyppa\LaravelFluentFM\Facades\FluentFM::class,
