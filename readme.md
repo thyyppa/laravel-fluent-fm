@@ -80,6 +80,8 @@ Register the service provider in `config/app.php` (optional)
 Register the facade alias in `config/app.php` (optional)
 ```php
 'aliases' => [
+    // Other Aliases
+
     Hyyppa\LaravelFluentFM\Facades\FluentFM::class,
 ]
 ```
