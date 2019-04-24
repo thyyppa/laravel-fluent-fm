@@ -109,6 +109,8 @@ FILEMAKER_PASS=[FileMaker file password]
 ```php  
 <?php  
   
+use Hyyppa\LaravelFluentFM\Facades\FluentFM;
+  
 // get a single record as array
 $record = FluentFM::record('layout', 'id')->get();
 
