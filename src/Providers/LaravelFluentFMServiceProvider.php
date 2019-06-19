@@ -32,8 +32,8 @@ class LaravelFluentFMServiceProvider extends ServiceProvider
     {
         $this->app->singleton(
             'laravel-fluent-fm',
-            static function () {
-                return new FluentFMRepository(config('fluent-fm'));
+            static function ($app) {
+                return new FluentFMRepository($app['config']['fluent-fm']);
             }
         );
     }
