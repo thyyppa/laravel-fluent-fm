@@ -11,7 +11,7 @@
   ],
   "require":      {
     "php":               ">=7.1",
-    "thyyppa/fluent-fm": "^1.0.19"
+    "thyyppa/fluent-fm": "^1.0.20"
   },
   "require-dev":  {
     "phpunit/phpunit":      "7.4.0",
