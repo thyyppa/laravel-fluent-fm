@@ -272,6 +272,12 @@ FluentFM::download( <layout>, <field>, [output_dir], [recordId] )
 
 // set global fields on table
 FluentFM::globals( [table], [ key => value ] )
+
+// clear query parameters
+FluentFM::clearQuery()
+
+// clear query parameters and reset to default options
+FluentFM::reset()
 ```
 
 
