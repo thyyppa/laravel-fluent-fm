@@ -271,7 +271,7 @@ FluentFM::download( <layout>, <field>, [output_dir], [recordId] )
 ...
 
 // set global fields on table
-FluentFM::global( [table], [ key => value ] )
+FluentFM::globals( [table], [ key => value ] )
 ```
 
 
