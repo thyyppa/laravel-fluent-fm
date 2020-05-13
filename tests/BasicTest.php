@@ -1,11 +1,12 @@
-<?php namespace Test;
+<?php
+
+namespace Test;
 
 use Hyyppa\LaravelFluentFM\Facades\FluentFM;
 
 class BasicTest extends TestCase
 {
-
-    public function testRecordCreation() : void
+    public function testRecordCreation(): void
     {
 //        todo: mock api calls
 //        $new = FluentFM::create( 'test', [
@@ -17,5 +18,4 @@ class BasicTest extends TestCase
 
         $this->assertTrue(true);
     }
-
 }
