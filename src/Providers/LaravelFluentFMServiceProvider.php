@@ -1,17 +1,18 @@
-<?php namespace Hyyppa\LaravelFluentFM\Providers;
+<?php
+
+namespace Hyyppa\LaravelFluentFM\Providers;
 
 use Hyyppa\FluentFM\Connection\FluentFMRepository;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelFluentFMServiceProvider extends ServiceProvider
 {
-
     /**
      * Perform post-registration booting of services.
      *
      * @return void
      */
-    public function boot() : void
+    public function boot(): void
     {
         $this->publishes([
             __DIR__.'/../../config/fluent-fm.php' => config_path('fluent-fm.php'),
@@ -22,13 +23,12 @@ class LaravelFluentFMServiceProvider extends ServiceProvider
         );
     }
 
-
     /**
      * Register any application services.
      *
      * @return void
      */
-    public function register() : void
+    public function register(): void
     {
         $this->app->singleton(
             'laravel-fluent-fm',
@@ -38,13 +38,12 @@ class LaravelFluentFMServiceProvider extends ServiceProvider
         );
     }
 
-
     /**
      * Get the services provided by the provider.
      *
      * @return array
      */
-    public function provides() : array
+    public function provides(): array
     {
         return ['laravel-fluent-fm'];
     }

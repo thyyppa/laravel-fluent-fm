@@ -1,11 +1,12 @@
-<?php namespace Test;
+<?php
+
+namespace Test;
 
 use Hyyppa\LaravelFluentFM\Facades\FluentFM;
 use Hyyppa\LaravelFluentFM\Providers\LaravelFluentFMServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
-
     protected static $config = [
         'host' => '__hostname__',
         'file' => '__filemaker__',
@@ -13,30 +14,26 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
         'pass' => '__password__',
     ];
 
-    protected $history      = [];
+    protected $history = [];
     protected $real_history = [];
 
-
-    protected function getEnvironmentSetUp($app) : void
+    protected function getEnvironmentSetUp($app): void
     {
-        $app[ 'config' ]->set('fluent-fm', [
-            'file' => static::$config[ 'file' ],
-            'host' => static::$config[ 'host' ],
-            'user' => static::$config[ 'user' ],
-            'pass' => static::$config[ 'pass' ],
+        $app['config']->set('fluent-fm', [
+            'file' => static::$config['file'],
+            'host' => static::$config['host'],
+            'user' => static::$config['user'],
+            'pass' => static::$config['pass'],
         ]);
     }
 
-
-    protected function getPackageProviders($app) : array
+    protected function getPackageProviders($app): array
     {
         return [LaravelFluentFMServiceProvider::class];
     }
 
-
-    protected function getPackageAliases($app) : array
+    protected function getPackageAliases($app): array
     {
         return ['FluentFM' => FluentFM::class];
     }
-
 }
