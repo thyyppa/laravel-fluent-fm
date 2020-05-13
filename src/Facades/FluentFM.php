@@ -1,10 +1,11 @@
-<?php namespace Hyyppa\LaravelFluentFM\Facades;
+<?php
+
+namespace Hyyppa\LaravelFluentFM\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 class FluentFM extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
@@ -12,9 +13,8 @@ class FluentFM extends Facade
      *
      * @throws RuntimeException
      */
-    protected static function getFacadeAccessor() : string
+    protected static function getFacadeAccessor(): string
     {
         return 'laravel-fluent-fm';
     }
-
 }
