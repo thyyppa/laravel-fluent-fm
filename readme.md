@@ -1,5 +1,5 @@
 
-# Laravel FluentFM [![](https://travis-ci.org/thyyppa/laravel-fluent-fm.svg?branch=master)](https://travis-ci.org/thyyppa/laravel-fluent-fm)
+# Laravel FluentFM [![](https://travis-ci.org/thyyppa/laravel-fluent-fm.svg?branch=master)](https://travis-ci.org/thyyppa/laravel-fluent-fm) [![](https://github.styleci.io/repos/152158952/shield?branch=master)](https://github.styleci.io/repos/152158952)
 
 FluentFM is a PHP package that connects to FileMaker Server's Data API using a fluent query builder style interface.
 
